@@ -1,0 +1,118 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "nombre",
+              "elicitationRequired": true,
+              "type": "AMAZON.FirstName",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.917024543001.568734192702"
+              }
+            }
+          ],
+          "name": "RegistrarUsuarioIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cierrate",
+            "deten te",
+            "salir",
+            "cerrar",
+            "detener"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "para que funciona",
+            "para que sirve",
+            "que hace",
+            "como funciona",
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "detener",
+            "cerrar",
+            "salir",
+            "deten te",
+            "cierrate"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "raza",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "CustomDogIntent",
+          "samples": [
+            "que sabes sobre el {raza}",
+            "di me algo sobre el {raza}",
+            "di me algo sobre {raza}",
+            "que sabes sobre {raza}",
+            "que sabes de la raza {raza}",
+            "di me algo del {raza}",
+            "que sabes del {raza}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "me dicen {nombre}",
+                "me llamo {nombre}",
+                "mi nombre es {nombre}",
+                "{nombre}"
+              ]
+            }
+          ],
+          "name": "RegistrarUsuarioIntent",
+          "samples": [
+            "registra mis datos",
+            "me llamo {nombre}",
+            "me apodan {nombre}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "información canina"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "No conosco tu nombre, como te llamas?"
+          }
+        ],
+        "id": "Elicit.Slot.917024543001.568734192702"
+      }
+    ]
+  }
+}

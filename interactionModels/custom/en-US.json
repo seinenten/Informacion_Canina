@@ -1,0 +1,113 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "nombre",
+              "elicitationRequired": true,
+              "type": "AMAZON.FirstName",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.460790489536.41895843899"
+              }
+            }
+          ],
+          "name": "RegistrarUsuarioIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "close",
+            "go out",
+            "arrest",
+            "stop",
+            "close yourself"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "what are doing",
+            "what is it for",
+            "what does it work for"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "close yourself",
+            "stop",
+            "go out",
+            "close",
+            "arrest"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "raza",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "CustomDogIntent",
+          "samples": [
+            "what do you know about the race {raza} ",
+            "what do you know about {raza}",
+            "tell me something about {raza}",
+            "tell me something about the {raza}",
+            "what do you know about the {raza}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "my name is {nombre}",
+                "they nickname me {nombre}",
+                "{nombre}"
+              ]
+            }
+          ],
+          "name": "RegistrarUsuarioIntent",
+          "samples": [
+            "my name is {nombre}",
+            "they nickname me {nombre}",
+            "register my data"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "canine information"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I don\u0027t know your name, what\u0027s your name?"
+          }
+        ],
+        "id": "Elicit.Slot.460790489536.41895843899"
+      }
+    ]
+  }
+}
