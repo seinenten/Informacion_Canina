@@ -26,10 +26,8 @@
         {
           "name": "AMAZON.CancelIntent",
           "samples": [
-            "cierrate",
+            "para",
             "deten te",
-            "salir",
-            "cerrar",
             "detener"
           ]
         },
@@ -46,10 +44,8 @@
         {
           "name": "AMAZON.StopIntent",
           "samples": [
-            "detener",
-            "cerrar",
             "salir",
-            "deten te",
+            "cerrar",
             "cierrate"
           ]
         },
@@ -101,7 +97,7 @@
         }
       ],
       "types": [],
-      "invocationName": "información canina"
+      "invocationName": "informacion canina"
     },
     "prompts": [
       {

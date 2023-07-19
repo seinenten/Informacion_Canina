@@ -3,16 +3,17 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Sample Short Description",
+          "summary": "It is a skill that allows you to enter a dog\u0027s breed. And this will throw you a curiosity of said race",
           "examplePhrases": [
             "Alexa, open canine information",
             "tell me something about poodle",
             "what is it for"
           ],
           "keywords": [],
-          "name": "APL-PRUEBA",
+          "name": "information canine",
           "description": "To execute the ability you must say: open canine information. It will give a welcome message and it has an appl design.\nIf you want to register the person\u0027s name so that the ability always receives it with your welcome message, all you have to do is say: my name is Pepe, for example. If you want more information about the ability, you just have to say: what is it for. And the ability will give you information about it. The main function is started by asking about a dog breed: tell me something about poodle. When executed, it will look for the breed that the user mentioned and when it finds it, it will provide an answer about said dog. Currently, the application only has 10 breeds. But little by little it will increase. Its last function is to stop the ability can be activated by saying: go out.",
           "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "updatesDescription": "intents were fixed",
           "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
         },
         "es-MX": {
@@ -23,9 +24,10 @@
             "para que funciona"
           ],
           "keywords": [],
-          "name": "Información Canina",
+          "name": "informacion canina",
           "description": "Para ejecutar la skill se debe de decir: abre informacion canina. Dara un mensaje de bienvenida y esta misma cuenta con un diseño apl.\nSi se desea registrar el nombre de la persona para que la skill siempre lo reciba con su mensaje de bienvenida nada mas se debe de decir: mi nombre es pepe por ejemplo. Si se desea obtener mas información de la skill solamente se debe de decir: para que funciona. Y la skill te brindara información acerca de esta misma. La función principal se inicia al preguntar acerca de una raza de perro: di me algo sobre el poodle. Al ejecutarse buscara la raza que menciono el usuario y al encontrarla brindara una respuesta acerca de dicho perro. Actualmente nada mas cuenta con 10 razas la aplicación. Pero poco a poco ira aumentando. Su ultima función sirve para parar la skill puede ser activada diciendo: cierrate.",
           "smallIconUri": "file://assets/images/es-MX_smallIconUri.png",
+          "updatesDescription": "los intents se corrigieron",
           "largeIconUri": "file://assets/images/es-MX_largeIconUri.png"
         }
       },
@@ -167,8 +169,12 @@
     "privacyAndCompliance": {
       "allowsPurchases": false,
       "locales": {
-        "en-US": {},
-        "es-MX": {}
+        "en-US": {
+          "privacyPolicyUrl": "https://informationcanine.netlify.app"
+        },
+        "es-MX": {
+          "privacyPolicyUrl": "https://informacioncanina.netlify.app"
+        }
       },
       "containsAds": false,
       "isExportCompliant": true,
@@ -177,7 +183,7 @@
         "isShoppingActionsEnabled": false,
         "isAmazonAssociatesOnAlexaEnabled": false
       },
-      "usesPersonalInfo": false
+      "usesPersonalInfo": true
     }
   }
 }

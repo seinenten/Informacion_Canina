@@ -26,11 +26,8 @@
         {
           "name": "AMAZON.CancelIntent",
           "samples": [
-            "close",
-            "go out",
-            "arrest",
             "stop",
-            "close yourself"
+            "arrest"
           ]
         },
         {
@@ -44,11 +41,9 @@
         {
           "name": "AMAZON.StopIntent",
           "samples": [
-            "close yourself",
-            "stop",
             "go out",
             "close",
-            "arrest"
+            " close yourself"
           ]
         },
         {
